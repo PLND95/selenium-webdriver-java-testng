@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 public class Topic_01_Check_Environment {
@@ -29,4 +30,12 @@ public class Topic_01_Check_Environment {
         driver.get("https://www.facebook.com/");
         driver.quit();
     }
+
+    @Test
+    public void TC_04() {
+        //...
+    }
+    @AfterClass
+    public void afterClass() { driver.quit();}
 }
+
